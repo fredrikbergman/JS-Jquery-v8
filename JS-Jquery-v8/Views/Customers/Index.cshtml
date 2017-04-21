@@ -1,0 +1,22 @@
+﻿@model JSjQuery.Models.CustomersIndexVM[]
+
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li customerId="@item.Id">@item.Name</li>
+
+            }
+        </ul>
+        <div id="idTag">Hej</div>
+
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+        <script src="~/JavaScript/myJavaScript.js"></script>
+    </body>
+</html>
